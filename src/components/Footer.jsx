@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,7 +18,7 @@ function Footer() {
           </div>
           <nav className="flex items-center gap-4">
             <a 
-              href="https://github.com/samuelayokanmi" 
+              href="https://github.com/Kommyayo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-white transition"
@@ -27,7 +27,7 @@ function Footer() {
               <Github className="w-5 h-5" />
             </a>
             <a 
-              href="https://linkedin.com/in/samuelayokanmi" 
+              href="https://www.linkedin.com/in/samuelayokanmi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-white transition"
@@ -36,13 +36,13 @@ function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
-              href="https://twitter.com/samuelayokanmi" 
+              href="https://www.instagram.com/kommyayo?igsh=d2dtZ2w4YzhpOXY4&utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-white transition"
-              aria-label="Twitter"
+              aria-label="Instagram"
             >
-              <Twitter className="w-5 h-5" />
+              <Instagram className="w-5 h-5" />
             </a>
             <a 
               href="mailto:samuel@example.com"

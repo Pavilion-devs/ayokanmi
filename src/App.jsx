@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 antialiased" style={{ fontFamily: 'var(--font-sans)' }}>
-      <Background />
+      {/* <Background /> */}
       <Navbar />
       <Sidebar />
       <main className="relative z-10">

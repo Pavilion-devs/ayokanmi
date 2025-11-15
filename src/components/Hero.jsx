@@ -19,7 +19,6 @@ function Hero() {
               >
                 <span className="block">Game</span>
                 <span className="block">Developer</span>
-                <span className="block">Student</span>
               </h1>
             </div>
             

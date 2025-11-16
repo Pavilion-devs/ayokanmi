@@ -78,12 +78,12 @@ function Hero() {
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Portrait Section */}
-          <div className="lg:col-span-5 border-[#ffffff]/10 border rounded-none">
-            <div className="relative overflow-hidden bg-white/5 border-0 rounded-none">
+          <div className="lg:col-span-5">
+            <div className="relative overflow-hidden w-full">
               <img 
                 src="/image.png" 
                 alt="Portrait of Samuel Ayokanmi" 
-                className="lg:h-[520px] w-full h-[420px] object-cover object-center scale-110 rounded-none" 
+                className="lg:h-[520px] w-full h-[420px] object-contain" 
               />
             </div>
           </div>

@@ -10,7 +10,7 @@ function Navbar() {
           <div className="flex items-center">
             <a href="/" className="group">
               <h1 className="text-xl font-semibold text-white font-geist-mono tracking-tight group-hover:text-blue-400 transition-colors">
-                Samuel <span className="text-blue-400">Ayokanmi</span>
+                Samuel <span className="text-blue-400">Adebayo</span>
               </h1>
               <p className="text-xs text-white/50 font-geist-mono">Game Developer</p>
             </a>

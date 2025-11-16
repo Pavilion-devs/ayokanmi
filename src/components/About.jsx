@@ -10,9 +10,6 @@ function About() {
             <div className="h-px flex-1 bg-white/10"></div>
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-6">About Me</h2>
-          <p className="lg:text-lg leading-relaxed text-base text-neutral-300 max-w-2xl font-geist-mono">
-            A dedicated game developer passionate about creating engaging and immersive gameplay experiences.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -20,7 +17,7 @@ function About() {
           <div className="lg:col-span-7">
             <div className="space-y-6 text-neutral-300 leading-relaxed mb-8">
               <p className="font-geist-mono">
-                I'm Samuel Ayokanmi Adebayo, known to friends as Kommy. I'm a dedicated computer games programming student at Anglia Ruskin University, passionate about game development and committed to crafting engaging gameplay experiences that prioritize user enjoyment.
+                I'm Samuel Ayokanmi Adebayo. I'm passionate about game development and committed to crafting engaging gameplay experiences that prioritize user enjoyment.
               </p>
               <p className="font-geist-mono">
                 As a problem solver, I eagerly embrace opportunities to expand my knowledge while continually refining my technical abilities. My work is supported by clean, maintainable, and efficient code that brings creative ideas to life through functional gameplay systems.

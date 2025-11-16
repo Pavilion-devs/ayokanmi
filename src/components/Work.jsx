@@ -5,14 +5,14 @@ import project2 from '../assets/project2.mp4';
 function Work() {
   const projects = [
     {
-      title: 'Project One',
+      title: 'Dungeon Generator',
       description: 'An exciting game development project showcasing advanced gameplay mechanics and physics simulation. Built with Unity Engine, featuring real-time interactions and immersive gameplay elements.',
       video: project1,
       tags: ['Unity', 'C#', 'Physics', 'AI'],
       category: 'Game Development'
     },
     {
-      title: 'Project Two',
+      title: 'Maze Frenzy',
       description: 'A compelling game project demonstrating creative problem-solving and technical expertise. Implements complex AI behavior systems and optimized performance for smooth gameplay experience.',
       video: project2,
       tags: ['Unreal Engine', 'C++', 'Gameplay', 'Optimization'],

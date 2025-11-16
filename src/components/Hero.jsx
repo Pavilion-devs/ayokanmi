@@ -1,5 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MessageSquare } from 'lucide-react';
+
+function TypingText({ text, speed = 100 }) {
+  const [displayedText, setDisplayedText] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+  const [isTyping, setIsTyping] = useState(true);
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      if (currentIndex < text.length) {
+        setDisplayedText(text.slice(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        setIsTyping(false);
+        clearInterval(interval);
+        // Hide cursor after typing is complete
+        setTimeout(() => {
+          setShowCursor(false);
+        }, 1000);
+      }
+    }, speed);
+
+    return () => clearInterval(interval);
+  }, [text, speed]);
+
+  // Blinking cursor effect (only while typing)
+  useEffect(() => {
+    if (!isTyping) return;
+    
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev);
+    }, 530);
+
+    return () => clearInterval(cursorInterval);
+  }, [isTyping]);
+
+  return (
+    <span>
+      {displayedText}
+      {showCursor && <span className="inline-block w-0.5 h-4 bg-white/70 ml-1 animate-pulse">|</span>}
+    </span>
+  );
+}
 
 function Hero() {
   return (
@@ -11,7 +54,7 @@ function Hero() {
             {/* Left: Intro Text */}
             <div className="lg:max-w-2xl">
               <p className="text-base font-medium text-white/70 font-geist-mono mb-4">
-                Hi, I'm Samuel Ayokanmi (Kommy)
+                <TypingText text="Hi, I'm Samuel Adebayo (Kommy)" speed={80} />
               </p>
               <h1 
                 className="text-[52px] sm:text-[88px] md:text-[112px] lg:text-[120px] font-extrabold tracking-tight leading-[0.9] uppercase text-neutral-200"
@@ -39,8 +82,8 @@ function Hero() {
             <div className="relative overflow-hidden bg-white/5 border-0 rounded-none">
               <img 
                 src="/image.png" 
-                alt="Portrait of Jeremi" 
-                className="lg:h-[520px] w-full h-[420px] object-cover rounded-none" 
+                alt="Portrait of Samuel Ayokanmi" 
+                className="lg:h-[520px] w-full h-[420px] object-cover object-center scale-110 rounded-none" 
               />
             </div>
           </div>
@@ -52,12 +95,12 @@ function Hero() {
               <div>
                 <div className="mb-8">
                   <div className="flex items-center gap-3 mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-white/40">
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-white/40">
                       <path d="M12 6v12" />
                       <path d="M17.196 9 6.804 15" />
                       <path d="m6.804 9 10.392 6" />
                     </svg>
-                    <div className="h-px flex-1 bg-white/10"></div>
+                    <div className="h-px flex-1 bg-white/10"></div> */}
                   </div>
                   
                   <p className="lg:text-lg leading-relaxed text-base text-neutral-300 mb-8 font-geist-mono">

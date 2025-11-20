@@ -22,7 +22,7 @@ function Work() {
 
   return (
     <section id="work" className="px-6 sm:px-8">
-      <div className="mx-auto max-w-6xl py-16 md:py-24">
+      <div className="mx-auto max-w-7xl py-16 md:py-24">
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-xs font-medium text-white/50 uppercase tracking-widest font-geist-mono">Portfolio</span>

@@ -66,7 +66,7 @@ function Hero() {
         
         {/* Main Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-          Game Developer.
+          Gameplay Programmer.
         </h1>
         
         {/* Welcome Message */}

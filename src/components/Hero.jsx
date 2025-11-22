@@ -89,7 +89,7 @@ function Hero() {
             About Me
           </a>
           <a 
-            href="/My%20CV.pdf" 
+            href="/CV.pdf" 
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 bg-transparent hover:bg-white/10 border border-white/40 hover:border-white/60 text-white text-base md:text-lg font-medium rounded transition-all font-geist-mono"

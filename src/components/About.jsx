@@ -28,13 +28,22 @@ function About() {
           <div className="lg:col-span-8">
             <div className="space-y-6 text-neutral-300 leading-relaxed mb-8">
               <p className="font-geist-mono text-base md:text-lg">
-                I'm <span className="text-white font-semibold">Samuel Ayokanmi Adebayo</span>. I'm passionate about game development and committed to crafting engaging gameplay experiences that prioritize user enjoyment.
+                My name is <span className="text-white font-semibold">Samuel Ayokanmi Adebayo</span> and I'm a narrative gameplay programmer from the United Kingdom. I'm currently residing in Cambridge where I'm studying computer games programming at Anglia Ruskin University. Ever since I can remember, I've been fascinated by video games. Open world games especially caught my imagination because they feel like living stories, full of challenges, triumphs, and moments that reflect the real struggles and purposes we all face. Growing up, I wanted to create games that could inspire players just like those games inspired me.
               </p>
               <p className="font-geist-mono">
-                As a problem solver, I eagerly embrace opportunities to expand my knowledge while continually refining my technical abilities. My work is supported by clean, maintainable, and efficient code that brings creative ideas to life through functional gameplay systems.
+                As I got older, I started to dive into the tools of the trade. I began experimenting with Unreal Engine and Unity, teaching myself how to turn creative ideas into worlds you can explore and stories you can live through. That hands-on experience made me realize how powerful and beautiful gameplay programming could be when it's done right. I'm committed to shaping gameplay experiences that prioritize fun and engagement but also carry meaning and intention.
               </p>
               <p className="font-geist-mono">
-                With a strong focus on gameplay mechanics, physics simulation, AI behavior, and user interaction, I thrive when tackling complex programming challenges. I value collaboration in multidisciplinary teams and am driven by a love for crafting games that both players and developers appreciate.
+                I'm a problem solver at heart. There's something thrilling about facing a complex challenge and breaking it down bit by bit until the solution emerges. Every bug fixed and every feature polished feels like a small victory. I love pushing myself to learn new techniques or programming languages and keeping my skills sharp so I can always deliver the best work possible.
+              </p>
+              <p className="font-geist-mono">
+                Clean, maintainable, and efficient code is something I take seriously because I believe that great gameplay systems rely on solid foundations. Whether it's gameplay mechanics, physics simulations, or AI behavior, my goal is to craft systems that are not only functional but also elegant and intuitive. User interaction is key to making a game feel alive, and I focus on creating experiences that feel natural and enjoyable for the player.
+              </p>
+              <p className="font-geist-mono">
+                Collaboration and teamwork are big parts of what I do. I enjoy working with artists, designers, writers, and other programmers to build something greater than what any of us could do alone. I believe professionalism doesn't mean losing your personality—in fact, bringing who you are into your work makes it richer and more unique.
+              </p>
+              <p className="font-geist-mono">
+                Outside of programming, I'm always exploring new ideas, researching gaming trends, and thinking about ways to improve my craft. I'm passionate about storytelling through games and looking forward to creating worlds that players not only play but remember. My journey as a gameplay programmer is about more than just code—it's about connecting with people through play and creativity.
               </p>
             </div>
 

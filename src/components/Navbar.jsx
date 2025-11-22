@@ -51,7 +51,7 @@ function Navbar() {
 
             {/* Resume Button */}
             <a 
-              href="/My%20CV.pdf" 
+              href="/CV.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 hover:border-blue-500/40 rounded-lg text-blue-400 hover:text-blue-300 transition-all font-geist-mono text-sm"

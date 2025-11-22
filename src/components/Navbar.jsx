@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Github, Linkedin, Instagram, FileText } from 'lucide-react';
 
 function Navbar() {
@@ -8,12 +9,12 @@ function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Left: Name/Logo */}
           <div className="flex items-center">
-            <a href="/" className="group">
+            <Link to="/" className="group">
               <h1 className="text-xl font-semibold text-white font-geist-mono tracking-tight group-hover:text-blue-400 transition-colors">
                 Samuel <span className="text-blue-400">Adebayo</span>
               </h1>
               <p className="text-xs text-white/50 font-geist-mono">Game Developer</p>
-            </a>
+            </Link>
           </div>
 
           {/* Right: Socials + Resume Button */}

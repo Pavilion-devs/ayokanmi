@@ -1,20 +1,20 @@
 import React from 'react';
-import project1 from '../assets/project1.mp4';
-import project2 from '../assets/project2.mp4';
 
 function Work() {
   const projects = [
     {
+      id: 'dungeon-generator',
       title: 'Dungeon Generator',
-      description: 'An exciting game development project showcasing advanced gameplay mechanics and physics simulation. Built with Unity Engine, featuring real-time interactions and immersive gameplay elements.',
-      video: project1,
-      tags: ['Unity', 'C#', 'Physics', 'AI'],
+      description: 'A sophisticated gameplay project featuring dynamic, procedurally generated dungeon environments with advanced physics simulations and AI systems.',
+      cover: '/cover1.png',
+      tags: ['Unity', 'C#', 'Procedural Generation', 'Physics'],
       category: 'Game Development'
     },
     {
+      id: 'maze-frenzy',
       title: 'Maze Frenzy',
-      description: 'A compelling game project demonstrating creative problem-solving and technical expertise. Implements complex AI behavior systems and optimized performance for smooth gameplay experience.',
-      video: project2,
+      description: 'An immersive first-person maze exploration game combining strategy, player skill, and environmental interaction for a dynamic gameplay experience.',
+      cover: '/cover2.png',
       tags: ['Unreal Engine', 'C++', 'Gameplay', 'Optimization'],
       category: 'Game Development'
     }
@@ -36,24 +36,24 @@ function Work() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <a 
               key={index}
-              className="group relative rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 overflow-hidden"
+              href={`/project/${project.id}`}
+              className="group relative rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 overflow-hidden cursor-pointer block"
             >
-              {/* Video Container */}
+              {/* Cover Image Container */}
               <div className="relative aspect-video bg-neutral-900 overflow-hidden">
-                <video 
+                <img 
+                  src={project.cover}
+                  alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                >
-                  <source src={project.video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                />
                 {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="text-white font-geist-mono text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-blue-500/20 px-4 py-2 rounded-lg border border-blue-500/40">
+                    View Project →
+                  </span>
+                </div>
               </div>
 
               {/* Content */}
@@ -81,7 +81,7 @@ function Work() {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

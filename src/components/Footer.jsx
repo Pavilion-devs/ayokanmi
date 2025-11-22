@@ -45,7 +45,7 @@ function Footer() {
               <Instagram className="w-5 h-5" />
             </a>
             <a 
-              href="mailto:samuel@example.com"
+              href="mailto:Ayokanmisamuel75@gmail.com"
               className="text-neutral-400 hover:text-white transition"
               aria-label="Email"
             >

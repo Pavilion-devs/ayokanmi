@@ -49,11 +49,11 @@ function Work() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-white font-geist-mono text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-blue-500/20 px-4 py-2 rounded-lg border border-blue-500/40">
                     View Project →
                   </span>
-                </div>
+                </div> */}
               </div>
 
               {/* Content */}

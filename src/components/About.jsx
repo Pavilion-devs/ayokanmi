@@ -15,11 +15,11 @@ function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Profile Image */}
           <div className="lg:col-span-4 flex justify-center lg:justify-start">
-            <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full bg-neutral-900 border-4 border-white/10 shadow-2xl overflow-hidden flex items-center justify-center">
+            <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-full bg-neutral-900 border-4 border-white/10 shadow-2xl overflow-hidden">
               <img 
-                src="" 
+                src="/image.png" 
                 alt="Samuel Adebayo" 
-                className="w-full h-full object-contain scale-95"
+                className="w-full h-full object-cover object-top scale-110"
               />
             </div>
           </div>
@@ -40,10 +40,10 @@ function About() {
                 Clean, maintainable, and efficient code is something I take seriously because I believe that great gameplay systems rely on solid foundations. Whether it's gameplay mechanics, physics simulations, or AI behavior, my goal is to craft systems that are not only functional but also elegant and intuitive. User interaction is key to making a game feel alive, and I focus on creating experiences that feel natural and enjoyable for the player.
               </p>
               <p className="font-geist-mono">
-                Collaboration and teamwork are big parts of what I do. I enjoy working with artists, designers, writers, and other programmers to build something greater than what any of us could do alone. I believe professionalism doesn't mean losing your personality—in fact, bringing who you are into your work makes it richer and more unique.
+                Collaboration and teamwork are big parts of what I do. I enjoy working with artists, designers, writers, and other programmers to build something greater than what any of us could do alone. I believe professionalism doesn't mean losing your personality. In fact, bringing who you are into your work makes it richer and more unique.
               </p>
               <p className="font-geist-mono">
-                Outside of programming, I'm always exploring new ideas, researching gaming trends, and thinking about ways to improve my craft. I'm passionate about storytelling through games and looking forward to creating worlds that players not only play but remember. My journey as a gameplay programmer is about more than just code—it's about connecting with people through play and creativity.
+                Outside of programming, I'm always exploring new ideas, researching gaming trends, and thinking about ways to improve my craft. I'm passionate about storytelling through games and looking forward to creating worlds that players not only play but remember. My journey as a gameplay programmer is about more than just code. It's about connecting with people through play and creativity.
               </p>
             </div>
 

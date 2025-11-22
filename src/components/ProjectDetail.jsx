@@ -100,6 +100,10 @@ function ProjectDetail() {
             <video 
               className="w-full aspect-video"
               controls
+              autoPlay
+              loop
+              muted
+              playsInline
               poster={project.cover}
             >
               <source src={project.video} type="video/mp4" />

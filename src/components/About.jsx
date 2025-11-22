@@ -17,7 +17,7 @@ function About() {
           <div className="lg:col-span-4 flex justify-center lg:justify-start">
             <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full bg-neutral-900 border-4 border-white/10 shadow-2xl overflow-hidden flex items-center justify-center">
               <img 
-                src="/image.png" 
+                src="" 
                 alt="Samuel Adebayo" 
                 className="w-full h-full object-contain scale-95"
               />
